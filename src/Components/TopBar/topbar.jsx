@@ -6,7 +6,7 @@ import {
   SearchOutlined,
   ModeNightOutlined,
   ChatBubbleOutlineOutlined,
-} from "@material-ui/icons";
+} from "@mui/icons-material";
 import "./topbar.scss";
 import boyavatar from "../../Images/boy-avatar.jpg";
 

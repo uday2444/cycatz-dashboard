@@ -1,7 +1,7 @@
 import React from "react";
 import "./newmember.css";
 import img1 from "../../Images/boy-avatar.jpg";
-import { Visibility } from "@material-ui/icons";
+import { Visibility } from "@mui/icons-material";
 import { userLatestTransaction } from "../Data/DummyData";
 
 function NewMember() {

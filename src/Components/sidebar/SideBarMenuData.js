@@ -1,5 +1,5 @@
 import React from "react";
-import * as MaterialIcon from "@material-ui/icons";
+import * as MaterialIcon from "@mui/icons-material";
 
 export const SideBarData = [
   {

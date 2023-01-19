@@ -6,7 +6,7 @@ import Login from "./Pages/Login/login";
 import Single from "./Pages/Single/Single";
 import New from "./Pages/New/New";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import list from "./Pages/Lists/list";
+import List from "./Pages/Lists/list";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
             <Route path="login" element={<Login />} />
           </Route>
           <Route path="lists">
-            <Route index element={<list />} />
+            <Route index element={<List />} />
             <Route path=":userId" element={<Single />} />
             <Route path="new" element={<New />} />
           </Route>

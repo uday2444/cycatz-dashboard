@@ -1,5 +1,5 @@
 import React from "react";
-import * as FeatureIcon from "@material-ui/icons";
+import * as FeatureIcon from "@mui/icons-material";
 import "./feature.scss";
 
 function Feature({ type }) {
