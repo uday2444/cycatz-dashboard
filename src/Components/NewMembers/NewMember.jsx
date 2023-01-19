@@ -1,47 +1,10 @@
 import React from "react";
 import "./newmember.css";
-import img1 from "../../Images/boy-avatar.jpg";
+// import img1 from "../../Images/boy-avatar.jpg";
 import { Visibility } from "@mui/icons-material";
 import { userLatestTransaction } from "../Data/DummyData";
 
 function NewMember() {
-  const MemberData = [
-    {
-      id: 1,
-      name: "Gowrav Bhatt",
-      image: img1,
-      alt: "Gowrav profile image",
-      designation: "Software Engineer",
-    },
-    {
-      id: 2,
-      name: "Bharath M H",
-      image: img1,
-      alt: "Bharath profile image",
-      designation: "Software Engineer",
-    },
-    {
-      id: 3,
-      name: "Sunil Kumar B",
-      image: img1,
-      alt: "sunil profile image",
-      designation: "Software Engineer",
-    },
-    {
-      id: 4,
-      name: "Koushik Raj",
-      image: img1,
-      alt: "kousik profile image",
-      designation: "Software Engineer",
-    },
-    {
-      id: 5,
-      name: "Sayanth",
-      image: img1,
-      alt: "sayanth profile image",
-      designation: "Software Engineer",
-    },
-  ];
   return (
     <div className="widget">
       <span className="widget-title">Newly Joined Members</span>

@@ -2,7 +2,7 @@ import React from "react";
 import Chart from "../../Components/Charts/Chart";
 import Feature from "../../Components/Features/Feature";
 import { UserAnalyticData } from "../../Components/Data/DummyData";
-import NewMember from "../../Components/NewMembers/NewMember";
+// import NewMember from "../../Components/NewMembers/NewMember";
 import LatestTransaction from "../../Components/LatestTransaction/LatestTransaction";
 import Sidebar from "../../Components/sidebar/Sidebar";
 import "./home.scss";

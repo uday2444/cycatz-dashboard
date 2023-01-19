@@ -4,7 +4,6 @@ import {
   Language,
   Settings,
   SearchOutlined,
-  ModeNightOutlined,
   ChatBubbleOutlineOutlined,
 } from "@mui/icons-material";
 import "./topbar.scss";
