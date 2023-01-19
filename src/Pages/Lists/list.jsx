@@ -1,8 +1,8 @@
 import React from "react";
 import "./list.scss";
 
-function User() {
-  return <div className="userlist-wrapper"></div>;
+function List() {
+  return <div className="userlist-wrapper">userlist</div>;
 }
 
-export default User;
+export default List;
