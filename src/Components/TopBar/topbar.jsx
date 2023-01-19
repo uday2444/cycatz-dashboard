@@ -1,27 +1,41 @@
 import React from "react";
-import { NotificationsNone, Language, Settings } from "@material-ui/icons";
-import "./topbar.css";
+import {
+  NotificationsNone,
+  Language,
+  Settings,
+  SearchOutlined,
+  ModeNightOutlined,
+  ChatBubbleOutlineOutlined,
+} from "@material-ui/icons";
+import "./topbar.scss";
 import boyavatar from "../../Images/boy-avatar.jpg";
 
 const TopBar = () => {
   return (
     <div className="topbar">
       <div className="topbar-wrapper">
-        <div className="topleft">
-          <div className="logo">Uadmin</div>
+        <div className="search">
+          <input type="text" placeholder="Search..." />
+          <SearchOutlined className="top-icon" />
         </div>
         <div className="topright">
           <div className="topbarIconContainer">
-            <NotificationsNone />
+            <NotificationsNone className="top-icon" />
             <span className="notification-count">2</span>
           </div>
           <div className="topbarIconContainer">
-            <Language />
+            <ChatBubbleOutlineOutlined className="top-icon" />
             <span className="notification-count">2</span>
           </div>
-          <div className="topbarIconContainer">
-            <Settings />
+          <div className="topbarIconContainer ">
+            <Language className="top-icon" />
           </div>
+          <div className="topbarIconContainer">
+            <Settings className="top-icon" />
+          </div>
+          {/* <div className="topbarIconContainer">
+            <ModeNightOutlined className="top-icon" />
+          </div> */}
           <img src={boyavatar} alt="avatar" className="topAvatar" />
         </div>
       </div>

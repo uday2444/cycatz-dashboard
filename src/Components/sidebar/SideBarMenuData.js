@@ -3,19 +3,12 @@ import * as MaterialIcon from "@material-ui/icons";
 
 export const SideBarData = [
   {
-    title: "Dashboard",
+    title: "Main",
     subNav: [
       {
         Icon: <MaterialIcon.LineStyle />,
-        title: "Home",
-      },
-      {
-        Icon: <MaterialIcon.Timeline />,
-        title: "Analytics",
-      },
-      {
-        Icon: <MaterialIcon.TrendingUp />,
-        title: "Sales",
+        title: "Dashboard",
+        style: "active",
       },
     ],
   },
@@ -31,25 +24,25 @@ export const SideBarData = [
         title: "Products",
       },
       {
-        Icon: <MaterialIcon.AttachMoney />,
-        title: "Transactions",
+        Icon: <MaterialIcon.CreditCard />,
+        title: "Orders",
       },
       {
-        Icon: <MaterialIcon.BarChartSharp />,
-        title: "Reports",
+        Icon: <MaterialIcon.LocalShipping />,
+        title: "Delivery",
       },
     ],
   },
   {
-    title: "Notifications",
+    title: "Useful",
     subNav: [
       {
-        Icon: <MaterialIcon.MailOutlineSharp />,
-        title: "Mail",
+        Icon: <MaterialIcon.BarChartSharp />,
+        title: "stats",
       },
       {
-        Icon: <MaterialIcon.ForumSharp />,
-        title: "Feedback",
+        Icon: <MaterialIcon.NotificationsNone />,
+        title: "Notification",
       },
       {
         Icon: <MaterialIcon.ChatBubbleOutlineSharp />,
@@ -58,19 +51,15 @@ export const SideBarData = [
     ],
   },
   {
-    title: "Staff",
+    title: "Manage",
     subNav: [
       {
-        Icon: <MaterialIcon.WorkOutline />,
-        title: "Manage",
+        Icon: <MaterialIcon.AccountCircle />,
+        title: "Profile",
       },
       {
-        Icon: <MaterialIcon.Timeline />,
-        title: "Analytics",
-      },
-      {
-        Icon: <MaterialIcon.BarChartSharp />,
-        title: "Reports",
+        Icon: <MaterialIcon.ExitToApp />,
+        title: "Logout",
       },
     ],
   },

@@ -1,0 +1,76 @@
+.topbar {
+    height: 50px;
+    border-bottom: 0.5px solid lightgray;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    .topbar-wrapper {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .search {
+            display: flex;
+            align-items: center;
+            border: 0.5px solid lightgray;
+            padding: 4px;
+            border-radius: 5px;
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+
+                &::placeholder {
+                    font-size: 12px;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .topright {
+            display: flex;
+            align-items: center;
+
+            .topbarIconContainer {
+                position: relative;
+                cursor: pointer;
+                margin-right: 20px;
+                color: #555;
+
+                .top-icon {
+                    font-size: 22px;
+                }
+
+                .notification-count {
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    top: -5px;
+                    right: -5px;
+                    border-radius: 50%;
+                    background-color: red;
+                    color: white;
+                    font-size: 12px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .topAvatar {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.home {
+    display: flex;
+
+    .home-container {
+        flex: 6;
+
+        .feature-widgets {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .home-widgets {
+            // display: flex;
+            margin: 20px;
+        }
+    }
+
+}

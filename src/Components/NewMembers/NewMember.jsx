@@ -2,6 +2,7 @@ import React from "react";
 import "./newmember.css";
 import img1 from "../../Images/boy-avatar.jpg";
 import { Visibility } from "@material-ui/icons";
+import { userLatestTransaction } from "../Data/DummyData";
 
 function NewMember() {
   const MemberData = [
@@ -13,24 +14,31 @@ function NewMember() {
       designation: "Software Engineer",
     },
     {
-      id: 1,
+      id: 2,
       name: "Bharath M H",
       image: img1,
       alt: "Bharath profile image",
       designation: "Software Engineer",
     },
     {
-      id: 1,
+      id: 3,
       name: "Sunil Kumar B",
       image: img1,
       alt: "sunil profile image",
       designation: "Software Engineer",
     },
     {
-      id: 1,
+      id: 4,
       name: "Koushik Raj",
       image: img1,
       alt: "kousik profile image",
+      designation: "Software Engineer",
+    },
+    {
+      id: 5,
+      name: "Sayanth",
+      image: img1,
+      alt: "sayanth profile image",
       designation: "Software Engineer",
     },
   ];
@@ -38,7 +46,7 @@ function NewMember() {
     <div className="widget">
       <span className="widget-title">Newly Joined Members</span>
       <ul className="widget-list">
-        {MemberData.map((item, index) => {
+        {userLatestTransaction.map((item, index) => {
           return (
             <li className="widget-items" key={index}>
               <img

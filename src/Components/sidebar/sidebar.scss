@@ -1,0 +1,93 @@
+.sidebar {
+    flex: 1;
+    position: sticky;
+    top: 0;
+    border-right: 0.5px solid lightgray;
+    height: 100vh;
+
+    .sidebar-top {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .sidebar-logo {
+            font-size: 25px;
+            font-weight: 900;
+            color: blue;
+            text-transform: uppercase;
+            word-spacing: 10px;
+
+            hr {
+                height: 0;
+                border-bottom: 0.5px solid lightgray;
+            }
+
+        }
+    }
+
+    .sidebar-menu-center {
+        padding-left: 20px;
+
+        .sidebar-title {
+            font-size: 16px;
+            color: rgb(187, 186, 186);
+            text-transform: uppercase;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .sidebar-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            .sidebar-items {
+                padding: 5px;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 10px;
+                color: #888;
+
+                .sidebar-icon {
+                    margin-right: 10px;
+                    font-size: 10px;
+                    color: #7451f8;
+                }
+
+                .active,
+                &:hover {
+                    background-color: rgb(228, 228, 250);
+                    color: #7451f8;
+                }
+            }
+        }
+    }
+
+    .sidebar-theme-bottom {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        .colorOption {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid #7451f8;
+            cursor: pointer;
+            margin-right: 10px;
+
+            &:nth-child(1) {
+                background-color: whitesmoke;
+            }
+
+            &:nth-child(2) {
+                background-color: #333;
+            }
+
+        }
+    }
+
+}
