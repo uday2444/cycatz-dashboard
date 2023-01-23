@@ -2,11 +2,11 @@
 // import TopBar from "./Components/TopBar/topbar";
 import "./App.css";
 import Home from "./Pages/Home/Home";
+import List from "./Pages/List/List";
 import Login from "./Pages/Login/login";
 import Single from "./Pages/Single/Single";
 import New from "./Pages/New/New";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import List from "./Pages/Lists/list";
 
 function App() {
   return (
@@ -17,13 +17,13 @@ function App() {
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
           </Route>
-          <Route path="lists">
+          <Route path="users">
             <Route index element={<List />} />
             <Route path=":userId" element={<Single />} />
             <Route path="new" element={<New />} />
           </Route>
           <Route path="products">
-            <Route index element={<list />} />
+            <Route index element={<List />} />
             <Route path=":productId" element={<Single />} />
             <Route path="new" element={<New />} />
           </Route>
