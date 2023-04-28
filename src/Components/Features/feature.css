@@ -1,0 +1,95 @@
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 30px 0px 0px 0px;
+  border-bottom: 0.5px solid lightgray;
+}
+
+.feature .feature-card {
+  color: #1693C4;
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 4px 10px 1px #c9c9c9;
+          box-shadow: 2px 4px 10px 1px #c9c9c9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.feature .feature-card.green {
+  background: #c8facd;
+}
+
+.feature .feature-card.blue {
+  background: #d0f2ff;
+}
+
+.feature .feature-card.yellow {
+  background: #fff7cd;
+}
+
+.feature .feature-card .count-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50%;
+  width: 100%;
+}
+
+.feature .feature-card .count {
+  font-size: 30px;
+}
+
+.feature .feature-card .subcount-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  padding: 5px;
+  height: 50%;
+}
+
+.feature .feature-card .subcount {
+  font-size: 14px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 2px;
+  border: 1px solid #ccc;
+}
+/*# sourceMappingURL=feature.css.map */

@@ -2,92 +2,124 @@
     flex: 1;
     position: sticky;
     top: 0;
-    border-right: 0.5px solid lightgray;
-    height: 100vh;
-
+    margin: 10px 15px 0px 30px;
+    height: 100%;
+  
     .sidebar-top {
-        height: 50px;
+      height: 100px;
+  
+      .sidebar-logo {
         display: flex;
         align-items: center;
         justify-content: center;
-
-        .sidebar-logo {
-            font-size: 25px;
-            font-weight: 900;
-            color: blue;
-            text-transform: uppercase;
-            word-spacing: 10px;
-
-            hr {
-                height: 0;
-                border-bottom: 0.5px solid lightgray;
-            }
-
-        }
+        height: inherit;
+        box-shadow: 2px 4px 10px 1px rgb(201, 201, 201);
+        border-radius: 10px;
+      }
     }
-
+  
     .sidebar-menu-center {
-        padding-left: 20px;
-
-        .sidebar-title {
-            font-size: 16px;
-            color: rgb(187, 186, 186);
-            text-transform: uppercase;
-            margin-top: 15px;
-            margin-bottom: 5px;
-        }
-
-        .sidebar-list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-
-            .sidebar-items {
-                padding: 5px;
-                font-size: 15px;
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-                border-radius: 10px;
-                color: #888;
-
-                .sidebar-icon {
-                    margin-right: 10px;
-                    font-size: 10px;
-                    color: #7451f8;
-                }
-
-                .active,
-                &:hover {
-                    background-color: rgb(228, 228, 250);
-                    color: #7451f8;
-                }
-            }
-        }
-    }
-
-    .sidebar-theme-bottom {
+      padding-left: 20px;
+      height: 100%;
+      background: linear-gradient(
+        185.52deg,
+        #1AB5F2 -28.11%,
+        #000000 134.62%
+      );
+      border-radius: 20px;
+      padding: 15px 15px 100px 15px;
+    margin-top: 20px;
+  
+      .sidebar-dropdown-button {
+        padding: 5px;
+        font-size: 15px;
         display: flex;
         align-items: center;
-        margin: 10px;
-
-        .colorOption {
-            width: 20px;
-            height: 20px;
-            border-radius: 5px;
-            border: 1px solid #7451f8;
-            cursor: pointer;
-            margin-right: 10px;
-
-            &:nth-child(1) {
-                background-color: whitesmoke;
-            }
-
-            &:nth-child(2) {
-                background-color: #333;
-            }
-
+        cursor: pointer;
+        border-radius: 10px;
+        color: #888;
+  
+        .sidebar-icon {
+          margin-right: 10px;
+          font-size: 10px;
+          color: #fff;
         }
-    }
+  
+        .sidebar-dropdown-icon {
+          margin-left: auto;
+        }
+  
+        &.active,
+        &:hover {
+          background-color: rgb(228, 228, 250);
+          color: #7451f8;
+        }
+      }
+  
+      .sidebar-menu-item {
+        padding: 5px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: #fff;
+  
+        .sidebar-icon {
+          margin-right: 10px;
+          font-size: 10px;
+          color: #fff;
+        }
+  
+        &.active,
+        &:hover {
+          background-color: rgb(228, 228, 250);
+          color: #7451f8;
+        }
+      }
+  
+      .sidebar-title {
+        font-size: 12px;
+        color: white;
+        text-transform: capitalize;
+        text-align: center;
+  
+        @media only screen and (max-width: 1200px) {
+          font-size: 12px;
+        }
+      }
+  
+      .sidebar-submenu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
 
+        &.open {
+            padding: 10px; 
+          }
+  
+        .sidebar-submenu-item {
+          padding: 5px;
+          font-size: 15px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          border-radius: 10px;
+          color: #888;
+  
+          .sidebar-submenu-icon {
+            margin-right: 10px;
+            font-size: 10px;
+            color: #7451f8;
+          }
+  
+          &.active,
+          &:hover {
+            background-color: rgb(228, 228, 250);
+            color: #7451f8;
+          }
+        }
+      }
+    }
 }
+  

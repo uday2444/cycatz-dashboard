@@ -1,72 +1,61 @@
 import React from "react";
-import * as FeatureIcon from "@mui/icons-material";
 import "./feature.scss";
 
-function Feature({ type }) {
-  let data;
+function Feature() {
+  const data = [
+    {
+      id: 1,
+      title: "Services",
+      count: 6,
+      bgcolor: "green",
+    },
+    {
+      id: 2,
+      title: "Compliance issue",
+      count: 50,
+      subCount: [24, 25, 67],
+      bgcolor: "green",
+    },
+    {
+      id: 3,
+      title: "Vulnerable Resources",
+      count: 500,
+      subCount: [25, 100, 10],
+      bgcolor: "blue",
+    },
+    {
+      id: 4,
+      title: "Resolved Issues",
+      count: 230,
+      subCount: [10, 12, 20],
+      bgcolor: "yellow",
+    },
+    {
+      id: 5,
+      title: "Resolved Issues",
+      count: 230,
+      subCount: [10, 12, 20],
+      bgcolor: "blue",
+    },
+  ];
 
-  const amount = 100;
-  const diff = 20;
-  switch (type) {
-    case "user":
-      data = {
-        id: 1,
-        title: "USERS",
-        isMoney: false,
-        Icon: <FeatureIcon.PersonOutlineOutlined className="person icon" />,
-        link: "See all users",
-      };
-      break;
-    case "order":
-      data = {
-        id: 2,
-        title: "ORDERS",
-        isMoney: false,
-        Icon: (
-          <FeatureIcon.ShoppingCartOutlined className="shoppingcart icon" />
-        ),
-        link: "view all orders",
-      };
-      break;
-    case "earning":
-      data = {
-        id: 3,
-        title: "EARNINGS",
-        isMoney: true,
-        Icon: <FeatureIcon.MonetizationOnOutlined className="earning icon" />,
-        link: "view net earning",
-      };
-      break;
-    case "balance":
-      data = {
-        id: 4,
-        title: "BALANCE",
-        isMoney: true,
-        Icon: (
-          <FeatureIcon.AccountBalanceWalletOutlined className="balance icon" />
-        ),
-        link: "see details",
-      };
-      break;
-    default:
-      break;
-  }
   return (
     <div className="feature">
-      <div className="feature-item-left">
-        <span className="feature-title">{data.title}</span>
-        <span className="counter">
-          {data.isMoney && "$"} {amount}
-        </span>
-        <span className="link">{data.link}</span>
-      </div>
-      <div className="feature-item-right">
-        <div className="percentage ">
-          <FeatureIcon.KeyboardArrowUpOutlined className="icon" />
-          <span className="positive">{diff}%</span>
+      {data.map((item) => (
+        <div key={item.id} className={`feature-card ${item.bgcolor}`}>
+          <h3>{item.title}</h3>
+          <div className="count-wrapper">
+            <p className="count">{item.count}</p>
+            {item.subCount && item.subCount.length > 0 && (
+              <div className="subcount-wrapper">
+                {item.subCount.map((sub) => (
+                  <p className="subcount" key={sub}>{sub}</p>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
-        {data.Icon}
-      </div>
+      ))}
     </div>
   );
 }

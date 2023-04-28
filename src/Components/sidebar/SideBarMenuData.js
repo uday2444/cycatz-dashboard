@@ -1,67 +1,95 @@
 import React from "react";
 import * as MaterialIcon from "@mui/icons-material";
 
+
+
 export const SideBarData = [
   {
-    title: "Main",
+    Icon: <MaterialIcon.LineStyle />,
+    title: "Dashboard",
+    style: "active",
+  },
+
+  {
+    Icon: <MaterialIcon.NotificationsActive />,
+    title: "Vulnerabilites",
+  },
+  {
+    Icon: <MaterialIcon.LockOpenSharp />,
+    title: "Attack surface",
+  },
+  {
+    Icon: <MaterialIcon.WebSharp />,
+    title: "Darkweb",
+  },
+  {
+    Icon: <MaterialIcon.PublicSharp />,
+    title: "Surfaceweb",
+  },
+
+  {
+    Icon: <MaterialIcon.BarChartSharp />,
+    title: "Brand Monitoring",
+  },
+  {
+    Icon: <MaterialIcon.BarChartSharp />,
+    title: "Thread Feed",
+  },
+  {
+    Icon: <MaterialIcon.StayCurrentPortraitSharp />,
+    title: "Mobile",
+  },
+
+  {
+    Icon: <MaterialIcon.LocalPostOfficeSharp />,
+    title: "Email Security",
+  },
+  {
+    Icon: <MaterialIcon.SummarizeSharp />,
+    title: "Incident / Report",
+  },
+  {
+    Icon: <MaterialIcon.BarChartSharp />,
+    title: "CSPM",
+  },
+  {
+    Icon: <MaterialIcon.BarChartSharp />,
+    title: "Vendor Risk Posture",
     subNav: [
       {
         Icon: <MaterialIcon.LineStyle />,
         title: "Dashboard",
         style: "active",
       },
-    ],
-  },
-  {
-    title: "Quick Menu",
-    subNav: [
       {
-        Icon: <MaterialIcon.PermIdentity />,
-        title: "Users",
+        Icon: <MaterialIcon.NotificationsActive />,
+        title: "Attack Surface Management",
       },
       {
-        Icon: <MaterialIcon.Storefront />,
-        title: "Products",
+        Icon: <MaterialIcon.WebSharp />,
+        title: "Darkweb",
       },
       {
-        Icon: <MaterialIcon.CreditCard />,
-        title: "Orders",
+        Icon: <MaterialIcon.PublicSharp />,
+        title: "Surfaceweb",
       },
-      {
-        Icon: <MaterialIcon.LocalShipping />,
-        title: "Delivery",
-      },
-    ],
-  },
-  {
-    title: "Useful",
-    subNav: [
       {
         Icon: <MaterialIcon.BarChartSharp />,
-        title: "stats",
+        title: "Brand Monitoring",
       },
       {
-        Icon: <MaterialIcon.NotificationsNone />,
-        title: "Notification",
-      },
-      {
-        Icon: <MaterialIcon.ChatBubbleOutlineSharp />,
-        title: "Messages",
+        Icon: <MaterialIcon.BarChartSharp />,
+        title: "Thread News",
       },
     ],
   },
   {
-    title: "Manage",
-    subNav: [
-      {
-        Icon: <MaterialIcon.AccountCircle />,
-        title: "Profile",
-      },
-      {
-        Icon: <MaterialIcon.ExitToApp />,
-        title: "Logout",
-      },
-    ],
+    Icon: <MaterialIcon.IntegrationInstructionsSharp />,
+    title: "Integration",
+  },
+  {
+    Icon: <MaterialIcon.SettingsSharp />,
+    title: "Settings",
   },
 ];
 

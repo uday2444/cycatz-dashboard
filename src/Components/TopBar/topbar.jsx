@@ -1,41 +1,32 @@
 import React from "react";
-import {
-  NotificationsNone,
-  Language,
-  Settings,
-  SearchOutlined,
-  ChatBubbleOutlineOutlined,
-} from "@mui/icons-material";
+import { HeadsetMic, Diamond } from '@mui/icons-material';
+
+
 import "./topbar.scss";
-import boyavatar from "../../Images/boy-avatar.jpg";
+import profilePic from "../../Images/profile-img.png";
+import flipcartLogo from '../../Images/flipcart-logo.png'
 
 const TopBar = () => {
   return (
     <div className="topbar">
       <div className="topbar-wrapper">
-        <div className="search">
-          <input type="text" placeholder="Search..." />
-          <SearchOutlined className="top-icon" />
+        <div className="flipcart-content">
+          <img src={flipcartLogo} className="Premium-logo" alt="flicart-logo" />
+          <p className="flipcart-title">FLipKart</p>
         </div>
         <div className="topright">
-          <div className="topbarIconContainer">
-            <NotificationsNone className="top-icon" />
-            <span className="notification-count">2</span>
+         
+        <div className="premium-content">
+          <Diamond className="premium-icon" alt="premium-icon" />
+          <p className="premium-title">Premium</p>
           </div>
-          <div className="topbarIconContainer">
-            <ChatBubbleOutlineOutlined className="top-icon" />
-            <span className="notification-count">2</span>
-          </div>
-          <div className="topbarIconContainer ">
-            <Language className="top-icon" />
-          </div>
-          <div className="topbarIconContainer">
-            <Settings className="top-icon" />
-          </div>
-          {/* <div className="topbarIconContainer">
-            <ModeNightOutlined className="top-icon" />
-          </div> */}
-          <img src={boyavatar} alt="avatar" className="topAvatar" />
+          <div className="help-content">
+          <HeadsetMic className="help-icon" alt="help-icon"/>
+          <p className="help-title">Help Desk</p>
+            </div>
+            
+          
+          <img src={profilePic} alt="avatar" className="topAvatar" />
         </div>
       </div>
     </div>

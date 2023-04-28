@@ -1,0 +1,21 @@
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.home .home-container {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 4px 10px 1px #c9c9c9;
+          box-shadow: 2px 4px 10px 1px #c9c9c9;
+  border-radius: 15px;
+}
+
+.home .home-container .home-widgets {
+  margin: 20px;
+}
+/*# sourceMappingURL=home.css.map */

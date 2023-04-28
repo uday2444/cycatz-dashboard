@@ -4,6 +4,10 @@
 
     .home-container {
         flex: 6;
+        
+        background: #FFFFFF;
+        box-shadow: 2px 4px 10px 1px rgb(201, 201, 201);
+border-radius: 15px;
 
         .feature-widgets {
             display: flex;

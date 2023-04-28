@@ -1,5 +1,5 @@
 .topbar {
-    height: 50px;
+    height: 100px;
     border-bottom: 0.5px solid lightgray;
     display: flex;
     background-color: white;
@@ -16,27 +16,22 @@
         align-items: center;
         justify-content: space-between;
 
-        .search {
+        .flipcart-content {
             display: flex;
             align-items: center;
-            border: 0.5px solid lightgray;
+            box-shadow: 2px 4px 10px 1px rgb(201, 201, 201);
             padding: 4px;
             border-radius: 5px;
 
-            input {
-                border: none;
-                outline: none;
-                background: transparent;
-
-                &::placeholder {
-                    font-size: 12px;
-                    margin-left: 5px;
-                }
+            .flipcart-logo {
+                height: 30px;
+                width: 30px;
+                object-fit: cover;
             }
 
-            .top-icon {
-                cursor: pointer;
-                font-size: 20px;
+            .flipcart-title {
+                font-size: 14px;
+                margin-right: 3px;
             }
         }
 
@@ -44,36 +39,52 @@
             display: flex;
             align-items: center;
 
-            .topbarIconContainer {
-                position: relative;
-                cursor: pointer;
+
+            .premium-content {
+                display: flex;
+                align-items: center;
+                background: linear-gradient(100.71deg, #E9B435 17.29%, #202124 260.67%);
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
                 margin-right: 20px;
-                color: #555;
-
-                .top-icon {
-                    font-size: 22px;
+                justify-content: space-between;
+    
+                .premium-icon {
+                    height: 20px;
+                    width: 20px;
+                    
                 }
-
-                .notification-count {
-                    position: absolute;
-                    width: 15px;
-                    height: 15px;
-                    top: -5px;
-                    right: -5px;
-                    border-radius: 50%;
-                    background-color: red;
-                    color: white;
-                    font-size: 12px;
-                    font-weight: bold;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+    
+                .premium-title {
+                    font-size: 15px;
+    margin: 0 5px;
+                }
+            }
+            .help-content {
+                display: flex;
+                align-items: center;
+                background: rgba(243, 243, 243, 1);
+                padding: 8px;
+                border-radius: 5px;
+                margin-right: 20px;
+                justify-content: space-between;
+    
+                .help-icon {
+                    height: 20px;
+                    width: 20px;
+                    
+                }
+    
+                .help-title {
+                    font-size: 15px;
+    margin: 0 5px;
                 }
             }
 
             .topAvatar {
-                width: 30px;
-                height: 30px;
+                width: 50px;
+                height: 50px;
                 border-radius: 50%;
             }
         }
