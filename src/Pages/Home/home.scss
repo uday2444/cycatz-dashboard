@@ -1,24 +1,35 @@
 .home {
     display: flex;
     width: 100%;
-
+  
     .home-container {
-        flex: 6;
+      flex: 6;
+      background: #FFFFFF;
+      box-shadow: 2px 4px 10px 1px rgb(201, 201, 201);
+      border-radius: 15px;
+      
+      .feature-widgets {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
         
-        background: #FFFFFF;
-        box-shadow: 2px 4px 10px 1px rgb(201, 201, 201);
-border-radius: 15px;
-
-        .feature-widgets {
-            display: flex;
-            padding: 20px;
-            gap: 20px;
-        }
-
-        .home-widgets {
-            // display: flex;
-            margin: 20px;
-        }
+        // @media only screen and (max-width: 768px) {
+        //   flex-direction: column;
+        //   padding: 10px;
+        // }
+      }
+  
+      .home-widgets {
+        margin: 20px;
+        
+        // @media only screen and (max-width: 768px) {
+        //   margin: 10px;
+        // }
+      }
     }
-
-}
+  
+    // @media only screen and (max-width: 768px) {
+    //   flex-direction: column;
+    // }
+  }
+  

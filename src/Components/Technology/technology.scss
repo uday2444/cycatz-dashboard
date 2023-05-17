@@ -1,11 +1,12 @@
+
+
 .technology-wrapper {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 30px 0px 0px 0px;
-    border-bottom: 0.5px solid lightgray;
-  
-  
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+  border-bottom: 0.5px solid lightgray;
+
   .technology-container {
     flex: 1;
     display: grid;
@@ -18,28 +19,28 @@
     margin-right: 20px;
     margin-left: 30px;
     padding: 20px;
-  
+
     .card {
       border-radius: 10px;
       box-shadow: 2px 4px 10px 1px rgb(201, 201, 201);
       height: 100%;
       display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 20px;
 
-    .card-para{
+      .card-para {
         font-size: 25px;
+      }
     }
-    }
-  
+
     .card1 {
       grid-row: 1 / span 2;
       height: 100%;
       background: #40CE0E;
     }
-  
+
     .card2 {
       grid-column: 2;
       grid-row: 1;
@@ -55,8 +56,15 @@
       height: 100px;
     }
   }
-  
+
   .charts {
     flex: 1;
+    margin-top: 30px;
   }
+
+  // @media only screen and (min-width: 768px) {
+  //   .technology-container {
+  //     grid-template-columns: 1fr 1fr;
+  //   }
+  // }
 }
